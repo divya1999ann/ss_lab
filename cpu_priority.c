@@ -55,10 +55,10 @@ void main()
   	
    	avg_wait=(float)sum_wait/n;
   	avg_ta = (float)sum_ta/n;
-  	printf("Process\t\t\tBurst time\t\tWaiting time\t\tTurnaround time\n");
+  	printf("Process\t\tPriority\t\tBurst time\t\tWaiting time\t\tTurnaround time\n");
   	for(i=0;i<n;i++)
   	{
-   		printf("\nP%d\t\t\t%d\t\t\t%d\t\t\t%d",P[i].pid,P[i].burst,P[i].waiting,P[i].ta);
+   		printf("\nP%d\t\t\t%d\t\t\t%d\t\t\t%d\t\t\t%d",P[i].pid,P[i].priority,P[i].burst,P[i].waiting,P[i].ta);
   	}
   	printf("\n");  
   	printf("\nAverage waiting and turnaround time are %f %f",avg_wait,avg_ta);
